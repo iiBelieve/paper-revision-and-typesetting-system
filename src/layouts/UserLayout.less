@@ -1,0 +1,86 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+}
+
+.lang {
+  text-align: right;
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  //padding: 32px 0;
+  flex: 1;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background: url('../assets/background.jpg') no-repeat center;
+    background-size: 100%;
+  }
+
+  .content {
+    //padding: 32px 0 24px 0;
+  }
+}
+
+.top {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header {
+  height: 80px;
+  line-height: 64px;
+  margin-bottom: 100px;
+  padding: 10px 10px 10px 20px;
+  box-shadow: 0 5px 15px #636262;
+  background: rgba(255, 255, 255, 0.6);
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 64px;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.logoTitle {
+  font-size: 30px;
+  color: #22a3ef;
+  font-family: STXingkai, serif;
+}
+
+.logoEg {
+  font-size: 30px;
+  color: #22a3ef;
+  font-family: "Times New Roman", serif;
+}
+
+.title {
+  font-size: 33px;
+  color: @heading-color;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
+
+.desc {
+  font-size: @font-size-base;
+  color: @text-color-secondary;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}

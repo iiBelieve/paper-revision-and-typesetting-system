@@ -1,0 +1,126 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex: 1;
+  background: white;
+}
+
+.renderChatView {
+  margin-bottom: 150px;
+}
+
+.chatButton {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .button {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.input {
+  width: 200px;
+}
+
+.chatBox {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .timeBox {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  .stuChatMain {
+    display: flex;
+    flex: 1;
+    width: 370px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    .stuName {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      background: #2eabff;
+      border-radius: 50%;
+      margin-right: 5px;
+      color: white;
+    }
+
+    .stuChatBox {
+      justify-content: flex-start;
+      border-radius: 5px;
+      background: #EDEDED;
+      border: 1px solid #EDEDED;
+      padding: 5px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  .teacherChatMin {
+    display: flex;
+    flex: 1;
+    width: 370px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    .teacherName {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      background: #2eabff;
+      border-radius: 50%;
+      margin-left: 5px;
+      color: white;
+    }
+
+    .teacherBox {
+      justify-content: flex-start;
+      border-radius: 5px;
+      background: #CCE6FF;
+      border: 1px solid #CCE6FF;
+      padding: 5px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+  }
+
+}
+
+.thesisBox {
+  width: 800px;
+  padding: 0 100px 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

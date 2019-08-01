@@ -1,0 +1,104 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex: 1;
+  background: white;
+  flex-direction: column;
+}
+
+.bn{
+  margin-left: 500px;
+}
+.cn{
+  width: 800px;
+  min-height: 800px;
+  display: flex;
+}
+
+.list {
+  //color: blue;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.fileIcon {
+  margin-right: 5px;
+}
+
+.icon{
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.colItem {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.divBox{
+  //display: flex;
+  //flex-direction: column-reverse;
+  height: 100%;
+  overflow:auto;
+}
+
+.radioItemBox {
+  display: flex;
+  flex-direction: row;
+  background: #8D8D8D;
+  .iconItemBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.box{
+  background-color: #fff;
+  padding:30px;
+  border-radius: 5px;
+}
+.top{
+  padding-left: 5px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #aaa;
+}
+
+.outSideBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+  .boxItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    :global {
+      .ant-radio {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.pageHeaderContent {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.thesisBox {
+  width: 1000px;
+  padding: 0 100px 100px;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+}
